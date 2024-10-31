@@ -7,19 +7,6 @@ function App() {
     <MantineProvider
       theme={{
         fontFamily:"Inter, sans-serif",
-        defaultRadius: "md",
-        components: {
-          TextInput: {
-            styles: {
-              input: {height: rem(48)}
-            }
-          },
-          PasswordInput: {
-            styles: {
-              input: { height: rem(48)}
-            }
-          }
-        }
       }}
       >
       <LoginPage />

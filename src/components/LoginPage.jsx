@@ -8,7 +8,6 @@ import { IconLock, IconMail } from "@tabler/icons-react";
 const LoginPage = () => {
     const inputStyles = {
         input: {
-            borderRadius: rem(20),
             '&:focus': {
                 borderColor: '#FFE14D'
             }
@@ -44,19 +43,18 @@ const LoginPage = () => {
                     <Title order={1} className="form-title">Bulk SMS</Title>
                     <Text size="sm" className="form-subtitle">Welcome to the Bulk SMS Platform</Text>
                     <form>
-                        <TextInput label="Username" placeholder="Enter your username" leftSection={<IconMail {...iconProps}/>}
+                        <TextInput size="md" radius="lg" label="Username" placeholder="Enter your username" leftSection={<IconMail {...iconProps}/>}
                         styles={inputStyles}
                         classNames={{
                             input: 'custom-input',
                             label: 'custom-label'
                         }}/>
 
-                        <PasswordInput label="Password" placeholder="Enter your password" leftSection={<IconLock {...iconProps}/>}
+                        <PasswordInput size="md" radius="lg" label="Password" placeholder="Enter your password" leftSection={<IconLock {...iconProps}/>}
                         styles={inputStyles}
                         classNames={{
                             input: 'custom-input',
-                            label: 'custom-label',
-                            innerInput: 'custom-inner-input'
+                            label: 'custom-label'
                         }}/>
 
                         <Button type="submit" fullWidth className="submit-button">Login</Button>
